@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.weidotbuild/arumi",
+  "title": "Arumi",
+  "description": "Generate AI images, video and audio with 55 models, priced in credits before you generate.",
+  "version": "1.0.0",
+  "websiteUrl": "https://arumi.ai/mcp",
+  "repository": {
+    "url": "https://github.com/weidotbuild/arumi",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.arumi.ai/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer followed by your Arumi API key, from https://arumi.ai/api-keys",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
